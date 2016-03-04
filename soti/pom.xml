@@ -74,7 +74,7 @@
 	
 	<scm>
 		<connection>scm:git:git://github.com/Balaji-scm/JAM.git</connection>
-		<developerConnection>scm:git:git@github.com:Balaji-scm/JAM/soti.git</developerConnection>
+		<developerConnection>scm:git:git@github.com:Balaji-scm/JAM.git</developerConnection>
 		
 		<url>https://github.com/Balaji-scm/JAM/tree/master</url>
 	</scm>
