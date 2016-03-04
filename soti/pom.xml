@@ -21,7 +21,7 @@
 	
 	<developers>
 		<developer>
-			<id>Balaji-scm</id>
+			<id>scmgit</id>
 			<name>Balaji-scm</name>
 			<email>mbalaji.scm@jamcracker.com</email>
 		</developer>
@@ -74,12 +74,10 @@
 	
 	
 	<scm>
-		<connection>
-			scm:git:git://github.com/Balaji-scm/JAM.git
-		</connection>
-		<developerConnection>scm:git:mbalaji.scm@jamcracker.com:Balaji-scm/JAM.git</developerConnection>
+		<connection>scm:git:git://github.com/Balaji-scm/JAM.git</connection>
+		<developerConnection>scm:git:git@github.com:Balaji-scm/JAM.git</developerConnection>
 		
-		<url>https://github.com/Balaji-scm/JAM</url>
+		<url>https://github.com/Balaji-scm/JAM/tree/master</url>
 	</scm>
 	
 	<properties>
@@ -101,6 +99,25 @@
 	
 	
 	<build>
-		<finalName>testsoti-adapter</finalName>
+		
+		 <plugins>
+                    <plugin>
+                          <groupId>org.apache.maven.plugins</groupId>
+                          <artifactId>maven-gpg-plugin</artifactId>
+                          <version>1.5</version>
+                <executions>
+                    <execution>
+                          <id>ossrh</id>
+                          <phase>verify</phase>
+                    <goals>
+                          <goal>sign</goal>
+                    </goals>
+                    </execution>
+                </executions>
+                    </plugin>
+                </plugins>
+
+                <finalName>testsoti-adapter</finalName>
+
 	</build>
 </project>
